@@ -2759,7 +2759,13 @@ label {
 /*-------------------------------------------------------------
 contact form
 ---------------------------------------------------------------*/
-/* Button styling */
+
+@media (max-width: 767px) {
+  .popup-content h2 {
+    font-size: 26px;
+}
+}
+
 .cs_btn {
   display: inline-block;
   padding: 10px 20px;
@@ -2779,7 +2785,7 @@ contact form
 .popup {
   display: none; /* Hidden by default */
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -2790,7 +2796,7 @@ contact form
 .popup-content {
   position: relative;
   background-color: black;
-  margin: 8% auto;
+  margin: 4% auto;
   padding: 20px;
   width: 80%;
   max-width: 530px;
@@ -2815,18 +2821,44 @@ contact form
 /* Form styling */
 form label {
   display: block;
-  margin: 10px 0 5px;
+  margin: 10px 0 1px;
 }
 
-form input, form textarea, form button {
+form input, form textarea{
   width: 100%;
-  padding: 10px;
+  height: 8px;
+  padding: 10px 0;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid #e018ff;
+  background: transparent;
   font-size: 16px;
-  color:black ;
+  color:rgb(255, 255, 255) ;
 }
+form textarea{
+  height:50px;
+}
+ form button {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #e018ff;
+  background: transparent;
+  font-size: 16px;
+  color:rgb(255, 255, 255) ;
+}
+
+form input:focus, form textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-bottom: 2px solid #e018ff; /* Change the bottom border color on focus */
+}
+
+form input:focus-visible, form textarea:focus-visible {
+  border-bottom: 2px solid #e018ff; /* Keep only the bottom border visible */
+}
+
 
 form button {
   background: -webkit-gradient(linear, left top, right top, from(#e018ff), to(#823fff));
