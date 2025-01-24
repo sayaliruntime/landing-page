@@ -2756,6 +2756,90 @@ label {
   }
 }
 
+/*-------------------------------------------------------------
+contact form
+---------------------------------------------------------------*/
+/* Button styling */
+.cs_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#e018ff), to(#823fff));
+  background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.cs_btn:hover {
+  background-color: #0056b3;
+}
+
+/* Popup styling */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  background-color: black;
+  margin: 8% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 530px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #e9e9e9;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Form styling */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color:black ;
+}
+
+form button {
+  background: -webkit-gradient(linear, left top, right top, from(#e018ff), to(#823fff));
+  background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#e018ff), to(#823fff));
+  background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+}
 
 /*--------------------------------------------------------------
   15. Card

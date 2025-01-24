@@ -35,7 +35,7 @@
         <p class="cs_hero_subtitle">Explore the trenches of new-age digital tools with us as our veteran team helps you
           achieve your goals</p>
         <div class="cs_hero_btns">
-          <a href="#" class="cs_btn cs_style_1"><span>Get connected</span></a>
+          <a href="#" class="cs_btn cs_style_1" id="openPopup"><span>Get connected</span></a>
           
         </div>
       </div>
@@ -45,6 +45,27 @@
     <div class="cs_hero_shape"><img src="assets/img/hero_shape_1.svg" alt=""></div>
   </section>
   <!-- End Hero Section -->
+
+  <!-----contact form-->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" id="closePopup">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-----end contact form-->
   <!-- Start Feature Section -->
   <section class="cs_about cs_style_1 cs_shape_wrap cs_about_shapes_1 position-relative">
     <div class="cs_shape cs_shape_position_1"></div>
@@ -312,5 +333,6 @@
   <script src="assets/js/jquery.slick.min.js"></script>
   <script src="assets/js/odometer.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
