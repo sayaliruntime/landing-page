@@ -13,6 +13,9 @@
   <title>Runtime Saudi Event</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.min.css">
   <link rel="stylesheet" href="assets/css/odometer.css">
@@ -25,6 +28,52 @@
     <span>Loading</span>
   </div>
 
+
+  <!---Header Section-->
+
+  <header class="cs_site_header cs_style_1 cs_primary_color cs_sticky_header">
+    <div class="cs_main_header">
+      <div class="container">
+        <div class="cs_main_header_in">
+          <div class="cs_main_header_left">
+            <a class="cs_site_branding" href="index.html">
+              <img src="assets/img/runtime-solutions-logo-1.png" alt="Logo">
+            </a>
+          </div>
+          <div class="cs_main_header_end">
+            <div class="cs_nav text-uppercase">
+              <ul class="cs_nav_list">
+                <li><a href="https://www.runtime-solutions.com/design/">Design</a></li>
+                <li><a href="https://www.runtime-solutions.com/marketing/">Marketing</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Technology</a>
+                  <ul>
+                    <li><a href="https://www.runtime-solutions.com/digital-transformation/"><i class="fa-solid fa-angle-right "></i>Digital Transformation</a></li>
+                    <li class="no-border"><a href="https://www.runtime-solutions.com/ui-ux/"><i class="fa-solid fa-angle-right"></i>UI/UX</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="">Portfolio</a>
+                  <ul>
+                    <li><a href="https://www.runtime-solutions.com/marketing-portfolio/"><i class="fa-solid fa-angle-right "></i>Marketing</a></li>
+                    <li><a href="https://www.runtime-solutions.com/technology-portfolio/"><i class="fa-solid fa-angle-right "></i>Technology</a></li>
+                    <li><a href="https://www.runtime-solutions.com/seo-portfolio/"><i class="fa-solid fa-angle-right "></i>SEO</a></li>
+                    <li class="no-border"><a href="https://www.runtime-solutions.com/government-projects/"><i class="fa-solid fa-angle-right "></i>Government</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://www.runtime-solutions.com/innovations/">Innovations</a></li>
+                <li><a href="https://www.runtime-solutions.com/contact/">Contact</a></li>
+                <li class="no-border"><a href="https://www.runtime-solutions.com/about/">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!---Header section end -->
   <!-- Start Hero Section -->
   <section class="cs_hero cs_style_1 cs_center cs_shape_wrap cs_hero_shapes_1" id="home">
     <div class="cs_shape cs_shape_position_1"></div>
@@ -50,27 +99,30 @@
   <div class="popup" id="popup">
     <div class="popup-content">
       <span class="close" id="closePopup">&times;</span>
-      <form id="contactForm">
+
+
+      <form id="contactForm" action="save_data.php" method="POST">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" >
-  
+        <input type="text" id="name" name="name">
+
         <label for="company">Company *</label>
         <input type="text" id="company" name="company" required>
-  
+
         <label for="designation">Designation</label>
-        <input type="text" id="designation" name="designation" >
-  
+        <input type="text" id="designation" name="designation">
+
         <label for="email">Email *</label>
         <input type="email" id="email" name="email" required>
-  
+
         <label for="contact">Contact *</label>
-        <input type="text" id="contact" name="contact" required>
-  
+        <input type="text" id="contact" name="contact" required pattern="[0-9]{10}" title="Enter a valid 10-digit number">
+
         <label for="requirement">Requirement</label>
-        <textarea id="requirement" name="requirement" rows="4" ></textarea>
-  
+        <textarea id="requirement" name="requirement" rows="4"></textarea>
+
         <button type="submit">Submit</button>
-      </form>
+        
+    </form>
     </div>
   </div>
   <!-----end contact form-->
@@ -235,7 +287,7 @@
                 </a>
                 <div class="cs_card_text">
                   <div class="cs_card_text_inner">
-                    <h3 class="cs_card_title cs_semibold mb-0"><a href="#">MilestonTech</a></h3>
+                    <h3 class="cs_card_title cs_semibold mb-0"><a href="#">Milestone Tech</a></h3>
                   
                   </div>
                 </div>
@@ -329,6 +381,40 @@
     </div>
   </div>
   <!-- End Counter -->
+
+  <!----Footer-->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/img/partner-logo-1.png" alt="Logo">
+    </div>
+    <div class="partner-logo">
+      <img src="assets/img/Google-Partner.jpg" alt="Logo">
+    </div>
+    <ul class="footer-nav">
+      <li><a href="https://www.runtime-solutions.com/design/">Design</a></li>
+      <li><a href="https://www.runtime-solutions.com/digital-transformation/">Digital Transformation</a></li>
+      <li><a href="https://www.runtime-solutions.com/government-projects/">Government Projects</a></li>
+      <li><a href="https://www.runtime-solutions.com/contact/">Contact</a></li>
+      <li><a href="https://www.runtime-solutions.com/about/">About</a></li>
+      <li><a href="https://www.runtime-solutions.com/blog/">Blog</a></li>
+    </ul>
+    <p class="footer-address">Runtime Solutions Private Limited,<br>
+      428, Laxmi Mall, Laxmi Industrial Estate,<br>
+      Link Road, Andheri (W),<br>
+      Mumbai - 400053</p>
+
+      <ul class="social-icon">
+        <li><a href="https://www.facebook.com/RuntimeSolutions"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/runtime-solutions/"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.youtube.com/user/runtimesolutionz"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://www.instagram.com/runtime_solutions/"><i class="fa-brands fa-instagram"></i></a></li>
+
+      </ul>
+
+    <p class="Copyright">Copyright © 2025 Runtime Solutions Pvt Ltd</p>
+  </footer>
+
+  <!---End-footer-->
   <!-- Start Roadmap Section -->
   
 
