@@ -2846,6 +2846,10 @@ a.cs_site_branding img {
     font-size: 36px;
     margin-bottom: 22px;
   }
+  .cs_hero_shape img {
+    width: 100%;
+    height: auto;
+}
 }
 .cs_hero.cs_style_1 .cs_hero_subtitle {
   color: var(--heading-color);
