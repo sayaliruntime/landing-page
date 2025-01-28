@@ -2708,6 +2708,7 @@ footer {
 }
 .partner-logo img {
   width: 250px;
+  height: auto;
   margin: 25px 10px 40px 10px;
 }
 .footer-nav {
