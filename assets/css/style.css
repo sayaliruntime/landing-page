@@ -2020,6 +2020,7 @@ label {
 .cs_card.cs_style_1 img {
   width: 250px;
   object-fit: cover;
+  background-color: white;
   height: 180px;
 }
 .cs_slider_arrows.cs_style_1 {
