@@ -2888,8 +2888,7 @@ a.cs_site_branding img {
 }
 .cs_hero.cs_style_1 .cs_hero_shape {
   position: absolute;
-  background: url('assets/img/hero_shape_1.svg') no-repeat center center;
-  background-size: cover;
+  
 }
 .cs_hero.cs_style_1 .cs_hero_circle {
   height: 160px;
