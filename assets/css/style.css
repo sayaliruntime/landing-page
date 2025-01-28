@@ -2017,7 +2017,11 @@ label {
   margin-left: -45px;
   margin-right: -45px;
 }
-
+.cs_card.cs_style_1 img {
+  width: 250px;
+  object-fit: cover;
+  height: 180px;
+}
 .cs_slider_arrows.cs_style_1 {
   display: -webkit-box;
   display: -ms-flexbox;
