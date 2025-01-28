@@ -1762,6 +1762,7 @@ label {
 }
 .cs_hero_thumb img {
   width: 650px;
+  height: auto;
 }
 .cs_about_shapes_1 .cs_shape_position_1 {
   top: 50%;
